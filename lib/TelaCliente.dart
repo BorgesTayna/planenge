@@ -35,12 +35,8 @@ class _TelaClienteState extends State<TelaCliente> {
                 ],
               ),
               Padding(padding: EdgeInsets.only(top: 16),
-                  child: Text("A PLANENGE / 7D BIM, é composta por uma equipe especializada em Planejamento e Gestão de obras em BIM, englobando as áreas de construção civil, engenharia de produção, arquitetura, entre outros, afim de gerar soluções de gestão de custos, eficiência em produtividade, controle e otimização de resultados para nossos clientes."
+                  child: Text("PAGINA EM DESENVOLVIMENTO"
                   )
-              ),
-              Padding(padding: EdgeInsets.only(top: 16),
-                child: Text("A PLANENGE / 7D BIM é referência em BIM em todo o território nacional, entrega ao mercado uma média de 7 planejamentos completos por mês, contemplando, modelagem, elaboração e compatibilização de projetos, orçamentos e cronogramas."
-                ),
               )
             ],
           ),
