@@ -42,13 +42,14 @@ class _TelaPrincipalState extends State<TelaPrincipal> {
         title: Text("Planenge | 7D Bim"
         ),
       ),
-      body: Container(
-        padding: EdgeInsets.all(16),
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          crossAxisAlignment: CrossAxisAlignment.center,
-          children: <Widget>[
-            Image.asset("images/logo_planenge.png"),
+      body: SingleChildScrollView(
+        child: Container(
+          padding: EdgeInsets.all(16),
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            crossAxisAlignment: CrossAxisAlignment.center,
+            children: <Widget>[
+              Image.asset("images/logo_planenge.png"),
               Padding(
                 padding: EdgeInsets.only(top: 32),
                 child: Row(
@@ -64,26 +65,27 @@ class _TelaPrincipalState extends State<TelaPrincipal> {
                     )
                   ],
                 ),
-            ),
-            Padding(
-              padding: EdgeInsets.only(top: 32),
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                children: <Widget>[
-                  GestureDetector(
-                    onTap: _abrirCliente,
-                    child: Image.asset("images/menu_cliente.png"),
-                  ),
-                  GestureDetector(
-                    onTap: _abrirContato,
-                    child: Image.asset("images/menu_contato.png"),
-                  )
-                ],
               ),
-            )
-          ],
+              Padding(
+                padding: EdgeInsets.only(top: 32),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  children: <Widget>[
+                    GestureDetector(
+                      onTap: _abrirCliente,
+                      child: Image.asset("images/menu_cliente.png"),
+                    ),
+                    GestureDetector(
+                      onTap: _abrirContato,
+                      child: Image.asset("images/menu_contato.png"),
+                    )
+                  ],
+                ),
+              )
+            ],
+          ),
         ),
-      ),
+      )
     );
   }
 }
